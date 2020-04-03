@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 100px 0;
+}
+/* The container w/ rounded corner */
+.container {
+  width: 700px;
+  max-width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px hsla(218, 22%, 67%, 0.4);
+  overflow: hidden;
+}
+
+/* The content of our container */
+
+main,
+section {
+  padding: 25px;
+}
+
+h1,
+h2 { margin-bottom: 20px; }
+h2 { font-weight: 400; }
+/* the main content of our container */
+
+.main-content {
+  background: #fff;
+  color: hsl(218, 22%, 67%);
+}
+
+.main-content h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 25px;
+}
+
+.main-content h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 20px;
+}
+
+/* the secondary content of our container */
+
+section {
+  color: #fff;
+}
+
+section h2 {
+  font-size: 20px;
+}
+
+/* The first secondary content */
+.sec-content-1 {
+  background: hsl(179, 62%, 43%);
+}
+
+.sec-content-1 p {
+  margin-bottom: 30px;
+}
+
+.price-per-month {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 30px;
+  margin-right: 15px;
+  font-weight: 700;
+}
+.mensuality {
+  color: hsl(204, 43%, 93%);
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: hsl(71, 73%, 54%);
+  color: #fff;
+  padding: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px hsla(218, 22%, 67%, 0.2);
+}
+
+/* The first secondary content */
+.sec-content-2 {
+  background: hsl(179, 47%, 52%);
+}
+
+li {
+  list-style: none;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+@media (min-width: 600px) {
+  body {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main,
+  section {
+    padding: 40px;
+  }
+
+  .main-content {
+    grid-column: 1/3;
+  }
+}
